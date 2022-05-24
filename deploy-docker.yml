@@ -4,7 +4,7 @@
   tasks:
     - name: Install python pip
       yum:
-        name: python-pip
+        name: python-pip2
         state: present
     - name: Install docker
       yum:
@@ -21,7 +21,7 @@
         state: present
     - name: Start the container
       docker_container:
-        name: hariapp
+        name: docapp
         image: "naresha553/docapp:0.0.1"
         state: started
         published_ports:
