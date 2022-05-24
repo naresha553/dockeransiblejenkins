@@ -16,9 +16,9 @@
         state: started
         enabled: yes
     - name: Install docker-py python module
-      pip3:
-        name: docker-py
-        state: present
+#      pip:
+#        name: docker-py
+#        state: present
     - name: Start the container
       docker_container:
         name: docapp
