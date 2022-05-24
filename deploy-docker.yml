@@ -4,7 +4,7 @@
   tasks:
     - name: Install python pip
       yum:
-        name: python-pip2
+        name: telnet
         state: present
     - name: Install docker
       yum:
